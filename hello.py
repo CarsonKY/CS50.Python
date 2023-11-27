@@ -1,1 +1,1 @@
-print ("Winston is coool")
+print ("Winston is coool");
