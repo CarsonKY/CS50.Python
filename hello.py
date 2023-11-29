@@ -28,3 +28,5 @@ print (name);
 #combine one line
 name2 = input ("Who is this  ").strip().title() ;
 print ("Nice to meet you "+ name2); 
+
+# testing home commit
