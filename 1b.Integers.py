@@ -37,4 +37,9 @@ print (calcrounddivide)
 # Dividing with commas and periods in place
 print (f"{calcrounddivide:,.2f}")
 
+# squaring the answer by creating function and returning the value
+def square(n):
+    return calcround ** 2
+
+print ("squared number is" , square(calcround))
 
