@@ -10,23 +10,33 @@ while j != 5:
     print ("woof")
     j += 1
 
-# ---------------
-
-# lists - square brackets 
+# ---------------  lists - square brackets 
 
 for k in [0, 1, 2]:
-    print ("Winston is cool")
+    print ("Winston is cool - list")
 
-# ----------------
-
-# range
+# ---------------- range command
 
 for l in range(4):
-    print ("Winston rocks")
+    print ("Winston rocks - range")
 
 # range with generic variable
 
 for _ in range(4):
-    print ("Winston is cool")
+    print ("Winston is cool - generic range\n" )
 
-    # 22:55 in loops
+# ---------------- X it out!
+
+    print ("Winston is cool - multiplied\n" * 3)
+
+
+# ---------------- user input 
+
+
+howmany = input ("How many times")
+for l in range (int(howmany)):
+
+    print ("Meow\n")
+    howmany = howmany + 1
+
+    # 26.58  loops
