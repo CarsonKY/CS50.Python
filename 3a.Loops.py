@@ -33,10 +33,52 @@ for _ in range(4):
 # ---------------- user input 
 
 
-howmany = input ("How many times")
+howmany =  int(input("How many times"))
 for l in range (int(howmany)):
 
     print ("Meow\n")
-    howmany = howmany + 1
+    howmany += 1
 
     # 26.58  loops
+
+# user input with validation
+
+while True:
+    try:
+        howmany = int(input("How many times (enter 0 to exit): "))
+        if howmany == 0:
+            print ("Exiting")
+            break
+        elif howmany > 0:
+            print ("Ok\n" * howmany)
+            
+        else:
+            print("Non negative number please")
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+# same program defined as a function
+
+
+def print_ok_times():
+    while True:
+        try:
+            howmany = int(input("How many times (enter 0 to exit): "))
+            if howmany == 0:
+                print("Exiting the program.")
+                break
+            elif howmany > 0:
+                print("OK\n" * howmany)
+                # return keeps the value in memory for later
+                return howmany
+            else:
+                print("Non-negative number please")
+        except ValueError:
+            print("Invalid input. Please enter a valid integer.")
+
+# Call the function to start the program
+print_ok_times()
+
+# return command brings back a value to the user of prg
+
+# 35.09
