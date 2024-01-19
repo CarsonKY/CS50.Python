@@ -6,3 +6,6 @@ dognames = [
     {"name": "Winston", "owner": "myself", "type": "corgi"},
     {"name": "Pookie", "owner": "Angell", "type": "mutt"}
 ]
+
+for dogname in dognames:
+    print(dogname["name"], dogname["owner"], sep=", ")
